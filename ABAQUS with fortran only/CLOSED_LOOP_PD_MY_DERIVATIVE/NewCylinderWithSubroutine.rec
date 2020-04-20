@@ -1,0 +1,1795 @@
+# -*- coding: mbcs -*-
+from part import *
+from material import *
+from section import *
+from assembly import *
+from step import *
+from interaction import *
+from load import *
+from mesh import *
+from optimization import *
+from job import *
+from sketch import *
+from visualization import *
+from connectorBehavior import *
+mdb.jobs['closedloop_step'].submit(consistencyChecking=OFF)
+mdb.jobs['closedloop_step']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'ABLAH', 'handle': 0, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NOTE THAT THE NUMBER OF ARGUMENTS FOR USER SUBROUTINES UAMP AND VUAMP HAVE BEEN CHANGED FOR V6.12. THE ARGUMENTS NPROPS AND PROPS HAVE BEEN ADDED. IF THE NUMBER OF ARGUMENTS ARE INCORRECT, THEN THE ANALYSIS WILL NOT RUN PROPERLY. PLEASE READ THE ABAQUS USER SUBROUTINES REFERENCE MANUAL FOR MORE DETAILS.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'AMPLITUDE, DEFINITION=USER HAS BEEN SPECIFIED IN THE INPUT FILE. THIS AMPLITUDE TYPE IS NOT SUPPORTED FOR MODAL PROCEDURES AND STEADY-STATE DYNAMIC ANALYSIS WITH THE RESPONSE COMPUTED DIRECTLY IN TERMS OF THE PHYSICAL DEGREES OF FREEDOM. IT WILL BE IGNORED IF IT IS USED WITH ANY OF THOSE PROCEDURES.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO OUTPUT VARIABLES ASSOCIATED WITH THIS FIELD OUTPUT GROUP.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Temp\\closedloop_step.odb', 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'ABLAH', 'handle': 5668, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'closedloop_step', 'memory': 140.267051696777})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 0.0, 'attempts': 0, 
+    'timeIncrement': 1e-13, 'increment': 0, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'closedloop_step', 'severe': 0, 'iterations': 0, 
+    'phase': STANDARD_PHASE, 'equilibrium': 0})
+mdb.jobs['closedloop_step']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'closedloop_step', 'memory': 165.61346244812})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 1, 'stepTime': 1e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 2e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 2, 'stepTime': 2e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 3e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 3, 'stepTime': 3e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 4.25e-13, 
+    'attempts': 1, 'timeIncrement': 1.25e-13, 'increment': 4, 
+    'stepTime': 4.25e-13, 'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 5.8125e-13, 
+    'attempts': 1, 'timeIncrement': 1.5625e-13, 'increment': 5, 
+    'stepTime': 5.8125e-13, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 7.765625e-13, 
+    'attempts': 1, 'timeIncrement': 1.953125e-13, 'increment': 6, 
+    'stepTime': 7.765625e-13, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.020703125e-12, 
+    'attempts': 1, 'timeIncrement': 2.44140625e-13, 'increment': 7, 
+    'stepTime': 1.020703125e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.32587890625e-12, 
+    'attempts': 1, 'timeIncrement': 3.0517578125e-13, 'increment': 8, 
+    'stepTime': 1.32587890625e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.7073486328125e-12, 
+    'attempts': 1, 'timeIncrement': 3.814697265625e-13, 'increment': 9, 
+    'stepTime': 1.7073486328125e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.18418579101562e-12, 'attempts': 1, 
+    'timeIncrement': 4.76837158203125e-13, 'increment': 10, 
+    'stepTime': 2.18418579101562e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.78023223876953e-12, 'attempts': 1, 
+    'timeIncrement': 5.96046447753906e-13, 'increment': 11, 
+    'stepTime': 2.78023223876953e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.52529029846191e-12, 'attempts': 1, 
+    'timeIncrement': 7.45058059692383e-13, 'increment': 12, 
+    'stepTime': 3.52529029846191e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.45661287307739e-12, 'attempts': 1, 
+    'timeIncrement': 9.31322574615478e-13, 'increment': 13, 
+    'stepTime': 4.45661287307739e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.62076609134674e-12, 'attempts': 1, 
+    'timeIncrement': 1.16415321826935e-12, 'increment': 14, 
+    'stepTime': 5.62076609134674e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.07595761418342e-12, 'attempts': 1, 
+    'timeIncrement': 1.45519152283668e-12, 'increment': 15, 
+    'stepTime': 7.07595761418342e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 8.89494701772928e-12, 'attempts': 1, 
+    'timeIncrement': 1.81898940354586e-12, 'increment': 16, 
+    'stepTime': 8.89494701772928e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.11686837721616e-11, 'attempts': 1, 
+    'timeIncrement': 2.27373675443232e-12, 'increment': 17, 
+    'stepTime': 1.11686837721616e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.4010854715202e-11, 
+    'attempts': 1, 'timeIncrement': 2.8421709430404e-12, 'increment': 18, 
+    'stepTime': 1.4010854715202e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.75635683940025e-11, 'attempts': 1, 
+    'timeIncrement': 3.5527136788005e-12, 'increment': 19, 
+    'stepTime': 1.75635683940025e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 2, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.20044604925031e-11, 'attempts': 1, 
+    'timeIncrement': 4.44089209850063e-12, 'increment': 20, 
+    'stepTime': 2.20044604925031e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.75555756156289e-11, 'attempts': 1, 
+    'timeIncrement': 5.55111512312578e-12, 'increment': 21, 
+    'stepTime': 2.75555756156289e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.44944695195361e-11, 'attempts': 1, 
+    'timeIncrement': 6.93889390390723e-12, 'increment': 22, 
+    'stepTime': 3.44944695195361e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.31680868994202e-11, 'attempts': 1, 
+    'timeIncrement': 8.67361737988403e-12, 'increment': 23, 
+    'stepTime': 4.31680868994202e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.40101086242752e-11, 'attempts': 1, 
+    'timeIncrement': 1.0842021724855e-11, 'increment': 24, 
+    'stepTime': 5.40101086242752e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 6.7562635780344e-11, 
+    'attempts': 1, 'timeIncrement': 1.35525271560688e-11, 'increment': 25, 
+    'stepTime': 6.7562635780344e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 8.450329472543e-11, 
+    'attempts': 1, 'timeIncrement': 1.6940658945086e-11, 'increment': 26, 
+    'stepTime': 8.450329472543e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.05679118406788e-10, 'attempts': 1, 
+    'timeIncrement': 2.11758236813575e-11, 'increment': 27, 
+    'stepTime': 1.05679118406788e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.32148898008484e-10, 'attempts': 1, 
+    'timeIncrement': 2.64697796016969e-11, 'increment': 28, 
+    'stepTime': 1.32148898008484e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.65236122510606e-10, 'attempts': 1, 
+    'timeIncrement': 3.30872245021211e-11, 'increment': 29, 
+    'stepTime': 1.65236122510606e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 3, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.06595153138257e-10, 'attempts': 1, 
+    'timeIncrement': 4.13590306276514e-11, 'increment': 30, 
+    'stepTime': 2.06595153138257e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.58293941422821e-10, 'attempts': 1, 
+    'timeIncrement': 5.16987882845642e-11, 'increment': 31, 
+    'stepTime': 2.58293941422821e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.22917426778526e-10, 'attempts': 1, 
+    'timeIncrement': 6.46234853557053e-11, 'increment': 32, 
+    'stepTime': 3.22917426778526e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.03696783473158e-10, 'attempts': 1, 
+    'timeIncrement': 8.07793566946316e-11, 'increment': 33, 
+    'stepTime': 4.03696783473158e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.04670979341447e-10, 'attempts': 1, 
+    'timeIncrement': 1.0097419586829e-10, 'increment': 34, 
+    'stepTime': 5.04670979341447e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.30888724176809e-10, 'attempts': 1, 
+    'timeIncrement': 1.26217744835362e-10, 'increment': 35, 
+    'stepTime': 6.30888724176809e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.88660905221012e-10, 'attempts': 1, 
+    'timeIncrement': 1.57772181044202e-10, 'increment': 36, 
+    'stepTime': 7.88660905221012e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.85876131526265e-10, 'attempts': 1, 
+    'timeIncrement': 1.97215226305253e-10, 'increment': 37, 
+    'stepTime': 9.85876131526265e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.23239516440783e-09, 'attempts': 1, 
+    'timeIncrement': 2.46519032881566e-10, 'increment': 38, 
+    'stepTime': 1.23239516440783e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.54054395550979e-09, 'attempts': 1, 
+    'timeIncrement': 3.08148791101958e-10, 'increment': 39, 
+    'stepTime': 1.54054395550979e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 4, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.92572994438724e-09, 'attempts': 1, 
+    'timeIncrement': 3.85185988877447e-10, 'increment': 40, 
+    'stepTime': 1.92572994438724e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.40721243048404e-09, 'attempts': 1, 
+    'timeIncrement': 4.81482486096809e-10, 'increment': 41, 
+    'stepTime': 2.40721243048404e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.00906553810506e-09, 'attempts': 1, 
+    'timeIncrement': 6.01853107621011e-10, 'increment': 42, 
+    'stepTime': 3.00906553810506e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.76138192263132e-09, 'attempts': 1, 
+    'timeIncrement': 7.52316384526264e-10, 'increment': 43, 
+    'stepTime': 3.76138192263132e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.70177740328915e-09, 'attempts': 1, 
+    'timeIncrement': 9.4039548065783e-10, 'increment': 44, 
+    'stepTime': 4.70177740328915e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.87727175411144e-09, 'attempts': 1, 
+    'timeIncrement': 1.17549435082229e-09, 'increment': 45, 
+    'stepTime': 5.87727175411144e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 7.3466396926393e-09, 
+    'attempts': 1, 'timeIncrement': 1.46936793852786e-09, 'increment': 46, 
+    'stepTime': 7.3466396926393e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.18334961579912e-09, 'attempts': 1, 
+    'timeIncrement': 1.83670992315982e-09, 'increment': 47, 
+    'stepTime': 9.18334961579912e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.14792370197489e-08, 'attempts': 1, 
+    'timeIncrement': 2.29588740394978e-09, 'increment': 48, 
+    'stepTime': 1.14792370197489e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.43490962746861e-08, 'attempts': 1, 
+    'timeIncrement': 2.86985925493722e-09, 'increment': 49, 
+    'stepTime': 1.43490962746861e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 5, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.79364203433577e-08, 'attempts': 1, 
+    'timeIncrement': 3.58732406867153e-09, 'increment': 50, 
+    'stepTime': 1.79364203433577e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.24205754291971e-08, 'attempts': 1, 
+    'timeIncrement': 4.48415508583941e-09, 'increment': 51, 
+    'stepTime': 2.24205754291971e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.80257692864963e-08, 'attempts': 1, 
+    'timeIncrement': 5.60519385729927e-09, 'increment': 52, 
+    'stepTime': 2.80257692864963e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.50322616081204e-08, 'attempts': 1, 
+    'timeIncrement': 7.00649232162408e-09, 'increment': 53, 
+    'stepTime': 3.50322616081204e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.37903770101505e-08, 'attempts': 1, 
+    'timeIncrement': 8.7581154020301e-09, 'increment': 54, 
+    'stepTime': 4.37903770101505e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.47380212626882e-08, 'attempts': 1, 
+    'timeIncrement': 1.09476442525376e-08, 'increment': 55, 
+    'stepTime': 5.47380212626882e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.84225765783602e-08, 'attempts': 1, 
+    'timeIncrement': 1.3684555315672e-08, 'increment': 56, 
+    'stepTime': 6.84225765783602e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 8.55282707229502e-08, 'attempts': 1, 
+    'timeIncrement': 1.710569414459e-08, 'increment': 57, 
+    'stepTime': 8.55282707229502e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.06910388403688e-07, 'attempts': 1, 
+    'timeIncrement': 2.13821176807376e-08, 'increment': 58, 
+    'stepTime': 1.06910388403688e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.3363803550461e-07, 
+    'attempts': 1, 'timeIncrement': 2.67276471009219e-08, 'increment': 59, 
+    'stepTime': 1.3363803550461e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 6, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.67047594380762e-07, 'attempts': 1, 
+    'timeIncrement': 3.34095588761524e-08, 'increment': 60, 
+    'stepTime': 1.67047594380762e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.08809542975953e-07, 'attempts': 1, 
+    'timeIncrement': 4.17619485951905e-08, 'increment': 61, 
+    'stepTime': 2.08809542975953e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.61011978719941e-07, 'attempts': 1, 
+    'timeIncrement': 5.22024357439882e-08, 'increment': 62, 
+    'stepTime': 2.61011978719941e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.26265023399926e-07, 'attempts': 1, 
+    'timeIncrement': 6.52530446799852e-08, 'increment': 63, 
+    'stepTime': 3.26265023399926e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.07831329249908e-07, 'attempts': 1, 
+    'timeIncrement': 8.15663058499815e-08, 'increment': 64, 
+    'stepTime': 4.07831329249908e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.09789211562384e-07, 'attempts': 1, 
+    'timeIncrement': 1.01957882312477e-07, 'increment': 65, 
+    'stepTime': 5.09789211562384e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.37236564452981e-07, 'attempts': 1, 
+    'timeIncrement': 1.27447352890596e-07, 'increment': 66, 
+    'stepTime': 6.37236564452981e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.96545755566226e-07, 'attempts': 1, 
+    'timeIncrement': 1.59309191113245e-07, 'increment': 67, 
+    'stepTime': 7.96545755566226e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.95682244457782e-07, 'attempts': 1, 
+    'timeIncrement': 1.99136488891556e-07, 'increment': 68, 
+    'stepTime': 9.95682244457782e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.24460285557223e-06, 'attempts': 1, 
+    'timeIncrement': 2.48920611114446e-07, 'increment': 69, 
+    'stepTime': 1.24460285557223e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 7, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.55575361946528e-06, 'attempts': 1, 
+    'timeIncrement': 3.11150763893057e-07, 'increment': 70, 
+    'stepTime': 1.55575361946528e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.94469207433161e-06, 'attempts': 1, 
+    'timeIncrement': 3.88938454866321e-07, 'increment': 71, 
+    'stepTime': 1.94469207433161e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.43086514291451e-06, 'attempts': 1, 
+    'timeIncrement': 4.86173068582902e-07, 'increment': 72, 
+    'stepTime': 2.43086514291451e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.03858147864313e-06, 'attempts': 1, 
+    'timeIncrement': 6.07716335728627e-07, 'increment': 73, 
+    'stepTime': 3.03858147864313e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': 1, 
+    'timeIncrement': 7.59645419660784e-07, 'increment': 74, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 1U', 
+    'timeIncrement': 9.4955677457598e-07, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 2U', 
+    'timeIncrement': 2.83455188131107e-07, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 3U', 
+    'timeIncrement': 3.25559872436754e-08, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 4U', 
+    'timeIncrement': 1.97553794887784e-09, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 5U', 
+    'timeIncrement': 1.09392894743316e-10, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step'].submit(consistencyChecking=OFF)
+mdb.jobs['closedloop_step']._Message(ERROR, {
+    'message': 'Problem during compilation - C:\\Temp\\uamp_ramp_sensor.for', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(JOB_ABORTED, {
+    'message': 'Problem during compilation - C:\\Temp\\uamp_ramp_sensor.for', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step'].submit(consistencyChecking=OFF)
+mdb.jobs['closedloop_step']._Message(ERROR, {
+    'message': 'Problem during compilation - C:\\Temp\\uamp_ramp_sensor.for', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(JOB_ABORTED, {
+    'message': 'Problem during compilation - C:\\Temp\\uamp_ramp_sensor.for', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step'].submit(consistencyChecking=OFF)
+mdb.jobs['closedloop_step']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'ABLAH', 'handle': 0, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NOTE THAT THE NUMBER OF ARGUMENTS FOR USER SUBROUTINES UAMP AND VUAMP HAVE BEEN CHANGED FOR V6.12. THE ARGUMENTS NPROPS AND PROPS HAVE BEEN ADDED. IF THE NUMBER OF ARGUMENTS ARE INCORRECT, THEN THE ANALYSIS WILL NOT RUN PROPERLY. PLEASE READ THE ABAQUS USER SUBROUTINES REFERENCE MANUAL FOR MORE DETAILS.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'AMPLITUDE, DEFINITION=USER HAS BEEN SPECIFIED IN THE INPUT FILE. THIS AMPLITUDE TYPE IS NOT SUPPORTED FOR MODAL PROCEDURES AND STEADY-STATE DYNAMIC ANALYSIS WITH THE RESPONSE COMPUTED DIRECTLY IN TERMS OF THE PHYSICAL DEGREES OF FREEDOM. IT WILL BE IGNORED IF IT IS USED WITH ANY OF THOSE PROCEDURES.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Temp\\closedloop_step.odb', 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO OUTPUT VARIABLES ASSOCIATED WITH THIS FIELD OUTPUT GROUP.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'ABLAH', 'handle': 7916, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'closedloop_step', 'memory': 140.267051696777})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 0.0, 'attempts': 0, 
+    'timeIncrement': 1e-13, 'increment': 0, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'closedloop_step', 'severe': 0, 'iterations': 0, 
+    'phase': STANDARD_PHASE, 'equilibrium': 0})
+mdb.jobs['closedloop_step']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'closedloop_step', 'memory': 165.61346244812})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 1, 'stepTime': 1e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 2e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 2, 'stepTime': 2e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 3e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 3, 'stepTime': 3e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 4.25e-13, 
+    'attempts': 1, 'timeIncrement': 1.25e-13, 'increment': 4, 
+    'stepTime': 4.25e-13, 'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 5.8125e-13, 
+    'attempts': 1, 'timeIncrement': 1.5625e-13, 'increment': 5, 
+    'stepTime': 5.8125e-13, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 7.765625e-13, 
+    'attempts': 1, 'timeIncrement': 1.953125e-13, 'increment': 6, 
+    'stepTime': 7.765625e-13, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.020703125e-12, 
+    'attempts': 1, 'timeIncrement': 2.44140625e-13, 'increment': 7, 
+    'stepTime': 1.020703125e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.32587890625e-12, 
+    'attempts': 1, 'timeIncrement': 3.0517578125e-13, 'increment': 8, 
+    'stepTime': 1.32587890625e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.7073486328125e-12, 
+    'attempts': 1, 'timeIncrement': 3.814697265625e-13, 'increment': 9, 
+    'stepTime': 1.7073486328125e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.18418579101562e-12, 'attempts': 1, 
+    'timeIncrement': 4.76837158203125e-13, 'increment': 10, 
+    'stepTime': 2.18418579101562e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.78023223876953e-12, 'attempts': 1, 
+    'timeIncrement': 5.96046447753906e-13, 'increment': 11, 
+    'stepTime': 2.78023223876953e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.52529029846191e-12, 'attempts': 1, 
+    'timeIncrement': 7.45058059692383e-13, 'increment': 12, 
+    'stepTime': 3.52529029846191e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.45661287307739e-12, 'attempts': 1, 
+    'timeIncrement': 9.31322574615478e-13, 'increment': 13, 
+    'stepTime': 4.45661287307739e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.62076609134674e-12, 'attempts': 1, 
+    'timeIncrement': 1.16415321826935e-12, 'increment': 14, 
+    'stepTime': 5.62076609134674e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.07595761418342e-12, 'attempts': 1, 
+    'timeIncrement': 1.45519152283668e-12, 'increment': 15, 
+    'stepTime': 7.07595761418342e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 8.89494701772928e-12, 'attempts': 1, 
+    'timeIncrement': 1.81898940354586e-12, 'increment': 16, 
+    'stepTime': 8.89494701772928e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.11686837721616e-11, 'attempts': 1, 
+    'timeIncrement': 2.27373675443232e-12, 'increment': 17, 
+    'stepTime': 1.11686837721616e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.4010854715202e-11, 
+    'attempts': 1, 'timeIncrement': 2.8421709430404e-12, 'increment': 18, 
+    'stepTime': 1.4010854715202e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.75635683940025e-11, 'attempts': 1, 
+    'timeIncrement': 3.5527136788005e-12, 'increment': 19, 
+    'stepTime': 1.75635683940025e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 2, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.20044604925031e-11, 'attempts': 1, 
+    'timeIncrement': 4.44089209850063e-12, 'increment': 20, 
+    'stepTime': 2.20044604925031e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.75555756156289e-11, 'attempts': 1, 
+    'timeIncrement': 5.55111512312578e-12, 'increment': 21, 
+    'stepTime': 2.75555756156289e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.44944695195361e-11, 'attempts': 1, 
+    'timeIncrement': 6.93889390390723e-12, 'increment': 22, 
+    'stepTime': 3.44944695195361e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.31680868994202e-11, 'attempts': 1, 
+    'timeIncrement': 8.67361737988403e-12, 'increment': 23, 
+    'stepTime': 4.31680868994202e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.40101086242752e-11, 'attempts': 1, 
+    'timeIncrement': 1.0842021724855e-11, 'increment': 24, 
+    'stepTime': 5.40101086242752e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 6.7562635780344e-11, 
+    'attempts': 1, 'timeIncrement': 1.35525271560688e-11, 'increment': 25, 
+    'stepTime': 6.7562635780344e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 8.450329472543e-11, 
+    'attempts': 1, 'timeIncrement': 1.6940658945086e-11, 'increment': 26, 
+    'stepTime': 8.450329472543e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.05679118406788e-10, 'attempts': 1, 
+    'timeIncrement': 2.11758236813575e-11, 'increment': 27, 
+    'stepTime': 1.05679118406788e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.32148898008484e-10, 'attempts': 1, 
+    'timeIncrement': 2.64697796016969e-11, 'increment': 28, 
+    'stepTime': 1.32148898008484e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.65236122510606e-10, 'attempts': 1, 
+    'timeIncrement': 3.30872245021211e-11, 'increment': 29, 
+    'stepTime': 1.65236122510606e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 3, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.06595153138257e-10, 'attempts': 1, 
+    'timeIncrement': 4.13590306276514e-11, 'increment': 30, 
+    'stepTime': 2.06595153138257e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.58293941422821e-10, 'attempts': 1, 
+    'timeIncrement': 5.16987882845642e-11, 'increment': 31, 
+    'stepTime': 2.58293941422821e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.22917426778526e-10, 'attempts': 1, 
+    'timeIncrement': 6.46234853557053e-11, 'increment': 32, 
+    'stepTime': 3.22917426778526e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.03696783473158e-10, 'attempts': 1, 
+    'timeIncrement': 8.07793566946316e-11, 'increment': 33, 
+    'stepTime': 4.03696783473158e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.04670979341447e-10, 'attempts': 1, 
+    'timeIncrement': 1.0097419586829e-10, 'increment': 34, 
+    'stepTime': 5.04670979341447e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.30888724176809e-10, 'attempts': 1, 
+    'timeIncrement': 1.26217744835362e-10, 'increment': 35, 
+    'stepTime': 6.30888724176809e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.88660905221012e-10, 'attempts': 1, 
+    'timeIncrement': 1.57772181044202e-10, 'increment': 36, 
+    'stepTime': 7.88660905221012e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.85876131526265e-10, 'attempts': 1, 
+    'timeIncrement': 1.97215226305253e-10, 'increment': 37, 
+    'stepTime': 9.85876131526265e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.23239516440783e-09, 'attempts': 1, 
+    'timeIncrement': 2.46519032881566e-10, 'increment': 38, 
+    'stepTime': 1.23239516440783e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.54054395550979e-09, 'attempts': 1, 
+    'timeIncrement': 3.08148791101958e-10, 'increment': 39, 
+    'stepTime': 1.54054395550979e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 4, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.92572994438724e-09, 'attempts': 1, 
+    'timeIncrement': 3.85185988877447e-10, 'increment': 40, 
+    'stepTime': 1.92572994438724e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.40721243048404e-09, 'attempts': 1, 
+    'timeIncrement': 4.81482486096809e-10, 'increment': 41, 
+    'stepTime': 2.40721243048404e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.00906553810506e-09, 'attempts': 1, 
+    'timeIncrement': 6.01853107621011e-10, 'increment': 42, 
+    'stepTime': 3.00906553810506e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.76138192263132e-09, 'attempts': 1, 
+    'timeIncrement': 7.52316384526264e-10, 'increment': 43, 
+    'stepTime': 3.76138192263132e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.70177740328915e-09, 'attempts': 1, 
+    'timeIncrement': 9.4039548065783e-10, 'increment': 44, 
+    'stepTime': 4.70177740328915e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.87727175411144e-09, 'attempts': 1, 
+    'timeIncrement': 1.17549435082229e-09, 'increment': 45, 
+    'stepTime': 5.87727175411144e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Process terminated by external request (SIGTERM or SIGINT received).', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(INTERRUPTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis interrupted by external signal', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step'].submit(consistencyChecking=OFF)
+mdb.jobs['closedloop_step']._Message(STARTED, {'phase': BATCHPRE_PHASE, 
+    'clientHost': 'ABLAH', 'handle': 0, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NOTE THAT THE NUMBER OF ARGUMENTS FOR USER SUBROUTINES UAMP AND VUAMP HAVE BEEN CHANGED FOR V6.12. THE ARGUMENTS NPROPS AND PROPS HAVE BEEN ADDED. IF THE NUMBER OF ARGUMENTS ARE INCORRECT, THEN THE ANALYSIS WILL NOT RUN PROPERLY. PLEASE READ THE ABAQUS USER SUBROUTINES REFERENCE MANUAL FOR MORE DETAILS.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'AMPLITUDE, DEFINITION=USER HAS BEEN SPECIFIED IN THE INPUT FILE. THIS AMPLITUDE TYPE IS NOT SUPPORTED FOR MODAL PROCEDURES AND STEADY-STATE DYNAMIC ANALYSIS WITH THE RESPONSE COMPUTED DIRECTLY IN TERMS OF THE PHYSICAL DEGREES OF FREEDOM. IT WILL BE IGNORED IF IT IS USED WITH ANY OF THOSE PROCEDURES.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'NO OUTPUT VARIABLES ASSOCIATED WITH THIS FIELD OUTPUT GROUP.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR1 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FILE, {'phase': BATCHPRE_PHASE, 
+    'file': 'C:\\Temp\\closedloop_step.odb', 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(COMPLETED, {'phase': BATCHPRE_PHASE, 
+    'message': 'Analysis phase complete', 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR2 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': BATCHPRE_PHASE, 
+    'message': 'OUTPUT REQUEST UR3 IS NOT VALID SINCE IT REQUESTS OUTPUT AT A DOF THAT IS NOT ACTIVE', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STARTED, {'phase': STANDARD_PHASE, 
+    'clientHost': 'ABLAH', 'handle': 3208, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STEP, {'phase': STANDARD_PHASE, 
+    'stepId': 1, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'closedloop_step', 'memory': 140.267051696777})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 0, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 0.0, 'attempts': 0, 
+    'timeIncrement': 1e-13, 'increment': 0, 'stepTime': 0.0, 'step': 1, 
+    'jobName': 'closedloop_step', 'severe': 0, 'iterations': 0, 
+    'phase': STANDARD_PHASE, 'equilibrium': 0})
+mdb.jobs['closedloop_step']._Message(MEMORY_ESTIMATE, {'phase': STANDARD_PHASE, 
+    'jobName': 'closedloop_step', 'memory': 165.61346244812})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 1, 'stepTime': 1e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 2e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 2, 'stepTime': 2e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 3e-13, 
+    'attempts': 1, 'timeIncrement': 1e-13, 'increment': 3, 'stepTime': 3e-13, 
+    'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 'iterations': 1, 
+    'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 4.25e-13, 
+    'attempts': 1, 'timeIncrement': 1.25e-13, 'increment': 4, 
+    'stepTime': 4.25e-13, 'step': 1, 'jobName': 'closedloop_step', 'severe': 0, 
+    'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 5.8125e-13, 
+    'attempts': 1, 'timeIncrement': 1.5625e-13, 'increment': 5, 
+    'stepTime': 5.8125e-13, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 7.765625e-13, 
+    'attempts': 1, 'timeIncrement': 1.953125e-13, 'increment': 6, 
+    'stepTime': 7.765625e-13, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.020703125e-12, 
+    'attempts': 1, 'timeIncrement': 2.44140625e-13, 'increment': 7, 
+    'stepTime': 1.020703125e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.32587890625e-12, 
+    'attempts': 1, 'timeIncrement': 3.0517578125e-13, 'increment': 8, 
+    'stepTime': 1.32587890625e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.7073486328125e-12, 
+    'attempts': 1, 'timeIncrement': 3.814697265625e-13, 'increment': 9, 
+    'stepTime': 1.7073486328125e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 1, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.18418579101562e-12, 'attempts': 1, 
+    'timeIncrement': 4.76837158203125e-13, 'increment': 10, 
+    'stepTime': 2.18418579101562e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.78023223876953e-12, 'attempts': 1, 
+    'timeIncrement': 5.96046447753906e-13, 'increment': 11, 
+    'stepTime': 2.78023223876953e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.52529029846191e-12, 'attempts': 1, 
+    'timeIncrement': 7.45058059692383e-13, 'increment': 12, 
+    'stepTime': 3.52529029846191e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.45661287307739e-12, 'attempts': 1, 
+    'timeIncrement': 9.31322574615478e-13, 'increment': 13, 
+    'stepTime': 4.45661287307739e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.62076609134674e-12, 'attempts': 1, 
+    'timeIncrement': 1.16415321826935e-12, 'increment': 14, 
+    'stepTime': 5.62076609134674e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.07595761418342e-12, 'attempts': 1, 
+    'timeIncrement': 1.45519152283668e-12, 'increment': 15, 
+    'stepTime': 7.07595761418342e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 8.89494701772928e-12, 'attempts': 1, 
+    'timeIncrement': 1.81898940354586e-12, 'increment': 16, 
+    'stepTime': 8.89494701772928e-12, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.11686837721616e-11, 'attempts': 1, 
+    'timeIncrement': 2.27373675443232e-12, 'increment': 17, 
+    'stepTime': 1.11686837721616e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.4010854715202e-11, 
+    'attempts': 1, 'timeIncrement': 2.8421709430404e-12, 'increment': 18, 
+    'stepTime': 1.4010854715202e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.75635683940025e-11, 'attempts': 1, 
+    'timeIncrement': 3.5527136788005e-12, 'increment': 19, 
+    'stepTime': 1.75635683940025e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 2, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.20044604925031e-11, 'attempts': 1, 
+    'timeIncrement': 4.44089209850063e-12, 'increment': 20, 
+    'stepTime': 2.20044604925031e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.75555756156289e-11, 'attempts': 1, 
+    'timeIncrement': 5.55111512312578e-12, 'increment': 21, 
+    'stepTime': 2.75555756156289e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.44944695195361e-11, 'attempts': 1, 
+    'timeIncrement': 6.93889390390723e-12, 'increment': 22, 
+    'stepTime': 3.44944695195361e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.31680868994202e-11, 'attempts': 1, 
+    'timeIncrement': 8.67361737988403e-12, 'increment': 23, 
+    'stepTime': 4.31680868994202e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.40101086242752e-11, 'attempts': 1, 
+    'timeIncrement': 1.0842021724855e-11, 'increment': 24, 
+    'stepTime': 5.40101086242752e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 6.7562635780344e-11, 
+    'attempts': 1, 'timeIncrement': 1.35525271560688e-11, 'increment': 25, 
+    'stepTime': 6.7562635780344e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 8.450329472543e-11, 
+    'attempts': 1, 'timeIncrement': 1.6940658945086e-11, 'increment': 26, 
+    'stepTime': 8.450329472543e-11, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.05679118406788e-10, 'attempts': 1, 
+    'timeIncrement': 2.11758236813575e-11, 'increment': 27, 
+    'stepTime': 1.05679118406788e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.32148898008484e-10, 'attempts': 1, 
+    'timeIncrement': 2.64697796016969e-11, 'increment': 28, 
+    'stepTime': 1.32148898008484e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.65236122510606e-10, 'attempts': 1, 
+    'timeIncrement': 3.30872245021211e-11, 'increment': 29, 
+    'stepTime': 1.65236122510606e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 3, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.06595153138257e-10, 'attempts': 1, 
+    'timeIncrement': 4.13590306276514e-11, 'increment': 30, 
+    'stepTime': 2.06595153138257e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.58293941422821e-10, 'attempts': 1, 
+    'timeIncrement': 5.16987882845642e-11, 'increment': 31, 
+    'stepTime': 2.58293941422821e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.22917426778526e-10, 'attempts': 1, 
+    'timeIncrement': 6.46234853557053e-11, 'increment': 32, 
+    'stepTime': 3.22917426778526e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.03696783473158e-10, 'attempts': 1, 
+    'timeIncrement': 8.07793566946316e-11, 'increment': 33, 
+    'stepTime': 4.03696783473158e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.04670979341447e-10, 'attempts': 1, 
+    'timeIncrement': 1.0097419586829e-10, 'increment': 34, 
+    'stepTime': 5.04670979341447e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.30888724176809e-10, 'attempts': 1, 
+    'timeIncrement': 1.26217744835362e-10, 'increment': 35, 
+    'stepTime': 6.30888724176809e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.88660905221012e-10, 'attempts': 1, 
+    'timeIncrement': 1.57772181044202e-10, 'increment': 36, 
+    'stepTime': 7.88660905221012e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.85876131526265e-10, 'attempts': 1, 
+    'timeIncrement': 1.97215226305253e-10, 'increment': 37, 
+    'stepTime': 9.85876131526265e-10, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.23239516440783e-09, 'attempts': 1, 
+    'timeIncrement': 2.46519032881566e-10, 'increment': 38, 
+    'stepTime': 1.23239516440783e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.54054395550979e-09, 'attempts': 1, 
+    'timeIncrement': 3.08148791101958e-10, 'increment': 39, 
+    'stepTime': 1.54054395550979e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 4, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.92572994438724e-09, 'attempts': 1, 
+    'timeIncrement': 3.85185988877447e-10, 'increment': 40, 
+    'stepTime': 1.92572994438724e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.40721243048404e-09, 'attempts': 1, 
+    'timeIncrement': 4.81482486096809e-10, 'increment': 41, 
+    'stepTime': 2.40721243048404e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.00906553810506e-09, 'attempts': 1, 
+    'timeIncrement': 6.01853107621011e-10, 'increment': 42, 
+    'stepTime': 3.00906553810506e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.76138192263132e-09, 'attempts': 1, 
+    'timeIncrement': 7.52316384526264e-10, 'increment': 43, 
+    'stepTime': 3.76138192263132e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.70177740328915e-09, 'attempts': 1, 
+    'timeIncrement': 9.4039548065783e-10, 'increment': 44, 
+    'stepTime': 4.70177740328915e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.87727175411144e-09, 'attempts': 1, 
+    'timeIncrement': 1.17549435082229e-09, 'increment': 45, 
+    'stepTime': 5.87727175411144e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 7.3466396926393e-09, 
+    'attempts': 1, 'timeIncrement': 1.46936793852786e-09, 'increment': 46, 
+    'stepTime': 7.3466396926393e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.18334961579912e-09, 'attempts': 1, 
+    'timeIncrement': 1.83670992315982e-09, 'increment': 47, 
+    'stepTime': 9.18334961579912e-09, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.14792370197489e-08, 'attempts': 1, 
+    'timeIncrement': 2.29588740394978e-09, 'increment': 48, 
+    'stepTime': 1.14792370197489e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.43490962746861e-08, 'attempts': 1, 
+    'timeIncrement': 2.86985925493722e-09, 'increment': 49, 
+    'stepTime': 1.43490962746861e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 5, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.79364203433577e-08, 'attempts': 1, 
+    'timeIncrement': 3.58732406867153e-09, 'increment': 50, 
+    'stepTime': 1.79364203433577e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.24205754291971e-08, 'attempts': 1, 
+    'timeIncrement': 4.48415508583941e-09, 'increment': 51, 
+    'stepTime': 2.24205754291971e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.80257692864963e-08, 'attempts': 1, 
+    'timeIncrement': 5.60519385729927e-09, 'increment': 52, 
+    'stepTime': 2.80257692864963e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.50322616081204e-08, 'attempts': 1, 
+    'timeIncrement': 7.00649232162408e-09, 'increment': 53, 
+    'stepTime': 3.50322616081204e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.37903770101505e-08, 'attempts': 1, 
+    'timeIncrement': 8.7581154020301e-09, 'increment': 54, 
+    'stepTime': 4.37903770101505e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.47380212626882e-08, 'attempts': 1, 
+    'timeIncrement': 1.09476442525376e-08, 'increment': 55, 
+    'stepTime': 5.47380212626882e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.84225765783602e-08, 'attempts': 1, 
+    'timeIncrement': 1.3684555315672e-08, 'increment': 56, 
+    'stepTime': 6.84225765783602e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 8.55282707229502e-08, 'attempts': 1, 
+    'timeIncrement': 1.710569414459e-08, 'increment': 57, 
+    'stepTime': 8.55282707229502e-08, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.06910388403688e-07, 'attempts': 1, 
+    'timeIncrement': 2.13821176807376e-08, 'increment': 58, 
+    'stepTime': 1.06910388403688e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {'totalTime': 1.3363803550461e-07, 
+    'attempts': 1, 'timeIncrement': 2.67276471009219e-08, 'increment': 59, 
+    'stepTime': 1.3363803550461e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 6, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.67047594380762e-07, 'attempts': 1, 
+    'timeIncrement': 3.34095588761524e-08, 'increment': 60, 
+    'stepTime': 1.67047594380762e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.08809542975953e-07, 'attempts': 1, 
+    'timeIncrement': 4.17619485951905e-08, 'increment': 61, 
+    'stepTime': 2.08809542975953e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.61011978719941e-07, 'attempts': 1, 
+    'timeIncrement': 5.22024357439882e-08, 'increment': 62, 
+    'stepTime': 2.61011978719941e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.26265023399926e-07, 'attempts': 1, 
+    'timeIncrement': 6.52530446799852e-08, 'increment': 63, 
+    'stepTime': 3.26265023399926e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 4.07831329249908e-07, 'attempts': 1, 
+    'timeIncrement': 8.15663058499815e-08, 'increment': 64, 
+    'stepTime': 4.07831329249908e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 5.09789211562384e-07, 'attempts': 1, 
+    'timeIncrement': 1.01957882312477e-07, 'increment': 65, 
+    'stepTime': 5.09789211562384e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 6.37236564452981e-07, 'attempts': 1, 
+    'timeIncrement': 1.27447352890596e-07, 'increment': 66, 
+    'stepTime': 6.37236564452981e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 7.96545755566226e-07, 'attempts': 1, 
+    'timeIncrement': 1.59309191113245e-07, 'increment': 67, 
+    'stepTime': 7.96545755566226e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 9.95682244457782e-07, 'attempts': 1, 
+    'timeIncrement': 1.99136488891556e-07, 'increment': 68, 
+    'stepTime': 9.95682244457782e-07, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.24460285557223e-06, 'attempts': 1, 
+    'timeIncrement': 2.48920611114446e-07, 'increment': 69, 
+    'stepTime': 1.24460285557223e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(WARNING, {'phase': STANDARD_PHASE, 
+    'message': 'There is zero CHARGE everywhere in the model based on the default criterion. please check the value of the average CHARGE during the current iteration to verify that the CHARGE is small enough to be treated as zero. if not, please use the solution controls to reset the criterion for zero CHARGE.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ODB_FRAME, {'phase': STANDARD_PHASE, 
+    'step': 0, 'frame': 7, 'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.55575361946528e-06, 'attempts': 1, 
+    'timeIncrement': 3.11150763893057e-07, 'increment': 70, 
+    'stepTime': 1.55575361946528e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 1.94469207433161e-06, 'attempts': 1, 
+    'timeIncrement': 3.88938454866321e-07, 'increment': 71, 
+    'stepTime': 1.94469207433161e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 2.43086514291451e-06, 'attempts': 1, 
+    'timeIncrement': 4.86173068582902e-07, 'increment': 72, 
+    'stepTime': 2.43086514291451e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.03858147864313e-06, 'attempts': 1, 
+    'timeIncrement': 6.07716335728627e-07, 'increment': 73, 
+    'stepTime': 3.03858147864313e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': 1, 
+    'timeIncrement': 7.59645419660784e-07, 'increment': 74, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 1U', 
+    'timeIncrement': 9.4955677457598e-07, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 2U', 
+    'timeIncrement': 2.83455188131107e-07, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 3U', 
+    'timeIncrement': 3.25559872436754e-08, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 4U', 
+    'timeIncrement': 1.97553794887784e-09, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 2, 'phase': STANDARD_PHASE, 'equilibrium': 2})
+mdb.jobs['closedloop_step']._Message(STATUS, {
+    'totalTime': 3.79822689830392e-06, 'attempts': ' 5U', 
+    'timeIncrement': 1.09392894743318e-10, 'increment': 75, 
+    'stepTime': 3.79822689830392e-06, 'step': 1, 'jobName': 'closedloop_step', 
+    'severe': 0, 'iterations': 1, 'phase': STANDARD_PHASE, 'equilibrium': 1})
+mdb.jobs['closedloop_step']._Message(ERROR, {'phase': STANDARD_PHASE, 
+    'message': 'Too many attempts made for this increment', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ABORTED, {'phase': STANDARD_PHASE, 
+    'message': 'Analysis phase failed due to errors', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(ERROR, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'closedloop_step'})
+mdb.jobs['closedloop_step']._Message(JOB_ABORTED, {
+    'message': 'Abaqus/Standard Analysis exited with an error - Please see the  message file for possible error messages if the file exists.', 
+    'jobName': 'closedloop_step'})

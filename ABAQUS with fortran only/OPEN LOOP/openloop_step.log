@@ -1,0 +1,16 @@
+Abaqus JOB openloop_step
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Standard checked out 12 tokens.
+<1012 out of 1024 licenses remain available>.
+Begin Analysis Input File Processor
+2/9/2016 12:48:34 PM
+Run pre.exe
+2/9/2016 12:48:46 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+2/9/2016 12:48:46 PM
+Run standard.exe
+2/9/2016 1:21:00 PM
+End Abaqus/Standard Analysis
+Abaqus JOB openloop_step COMPLETED

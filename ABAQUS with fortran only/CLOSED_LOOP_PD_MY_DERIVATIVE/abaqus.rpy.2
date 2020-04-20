@@ -1,0 +1,64 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 6.13-1 replay file
+# Internal Version: 2013_05_16-04.28.56 126354
+# Run by p4wp4w on Thu Feb 18 10:48:11 2016
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+#: Abaqus Error: 
+#: This error may have occurred due to a change to the Abaqus Scripting
+#: Interface. Please see the Abaqus Scripting Manual for the details of
+#: these changes. Also see the "Example environment files" section of 
+#: the Abaqus Site Guide for up-to-date examples of common tasks in the
+#: environment file.
+#: Execution of "onCaeGraphicsStartup()" in the site directory failed.
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=271.731781005859, 
+    height=208.144454956055)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+openMdb(pathName='C:/Temp/NewCylinderWithSubroutine.cae')
+#: The model database "C:\Temp\NewCylinderWithSubroutine.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+p = mdb.models['Cylindrical Panel'].parts['Cylinder']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    adaptiveMeshConstraints=ON, optimizationTasks=OFF, 
+    geometricRestrictions=OFF, stopConditions=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=ON, 
+    adaptiveMeshConstraints=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2.44985, 
+    farPlane=3.86648, width=0.179912, height=0.100008, viewOffsetX=0.00254146, 
+    viewOffsetY=0.143769)
+session.viewports['Viewport: 1'].view.setValues(session.views['Iso'])
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2.30996, 
+    farPlane=4.1184, width=1.67416, height=0.930617, cameraPosition=(1.22036, 
+    -0.873716, 3.23776), cameraUpVector=(-0.166512, 0.981859, 0.0907059), 
+    cameraTarget=(0.000801593, 0.240303, 0.545993))
+session.viewports['Viewport: 1'].view.setValues(nearPlane=2.4727, 
+    farPlane=3.95565, width=0.0978078, height=0.0543686, viewOffsetX=0.043245, 
+    viewOffsetY=0.184059)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+session.viewports['Viewport: 1'].view.setValues(session.views['Iso'])
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=ON, bcs=ON, 
+    predefinedFields=ON, connectors=ON)
+mdb.models['Cylindrical Panel'].UserAmplitude(name='Dumm_user', 
+    numVariables=10)
+del mdb.models['Cylindrical Panel'].amplitudes['Dumm_user']
+mdb.save()
+#: The model database has been saved to "C:\Temp\NewCylinderWithSubroutine.cae".

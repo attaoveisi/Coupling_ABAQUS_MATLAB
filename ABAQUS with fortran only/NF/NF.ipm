@@ -1,0 +1,48 @@
+<?xml version="1.0"?><msgwrapper><Started><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName><clientHost type="string">ABLAH</clientHost><handle type="integer">0</handle></Started>
+<Warning><message type="string">PLEASE MAKE SURE THAT THE MESH DENSITY OF THE SLAVE SURFACE IN THE TIE PAIR (ASSEMBLY__PICKEDSURF41,ASSEMBLY_Bottom Layer Piezo) IS FINER THAN THE MASTER SURFACE.  THE ANALYSIS MAY RUN SLOWER, MAY YIELD INACCURATE RESULTS, AND MAY REQUIRE MORE MEMORY IF THIS IS NOT THE CASE.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Warning>
+<Warning><message type="string">FOR *TIE PAIR (ASSEMBLY__PICKEDSURF41-ASSEMBLY_Bottom Layer Piezo), NOT ALL THE NODES THAT HAVE BEEN ADJUSTED WERE PRINTED. SPECIFY *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Warning>
+<Warning><message type="string">FOR *TIE PAIR (ASSEMBLY_Top Layer Piezo-ASSEMBLY__PICKEDSURF40), NOT ALL THE NODES THAT HAVE BEEN ADJUSTED WERE PRINTED. SPECIFY *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Warning>
+<Warning><message type="string">FOR *TIE PAIR (ASSEMBLY_Top Layer Piezo-ASSEMBLY__PICKEDSURF40), ADJUSTED NODES WITH VERY SMALL ADJUSTMENTS WERE NOT PRINTED. SPECIFY *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Warning>
+<Warning><message type="string">NOTE THAT THE NUMBER OF ARGUMENTS FOR USER SUBROUTINES UAMP AND VUAMP HAVE BEEN CHANGED FOR V6.12. THE ARGUMENTS NPROPS AND PROPS HAVE BEEN ADDED. IF THE NUMBER OF ARGUMENTS ARE INCORRECT, THEN THE ANALYSIS WILL NOT RUN PROPERLY. PLEASE READ THE ABAQUS USER SUBROUTINES REFERENCE MANUAL FOR MORE DETAILS.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Warning>
+<Warning><message type="string">AMPLITUDE, DEFINITION=USER HAS BEEN SPECIFIED IN THE INPUT FILE. THIS AMPLITUDE TYPE IS NOT SUPPORTED FOR MODAL PROCEDURES AND STEADY-STATE DYNAMIC ANALYSIS WITH THE RESPONSE COMPUTED DIRECTLY IN TERMS OF THE PHYSICAL DEGREES OF FREEDOM. IT WILL BE IGNORED IF IT IS USED WITH ANY OF THOSE PROCEDURES.</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Warning>
+<Odb_File><file type="string">C:\Temp\NF.odb</file><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Odb_File>
+<Completed><message type="string">Analysis phase complete</message><phase type="symconst">BATCHPRE_PHASE</phase><jobName type="string">NF</jobName></Completed>
+<Started><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName><clientHost type="string">ABLAH</clientHost><handle type="integer">3312</handle></Started>
+<Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Step>
+<Odb_Frame><step type="integer">0</step><frame type="integer">0</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Status><step type="integer">1</step><increment type="integer">0</increment><attempts type="integer">1</attempts><severe type="integer">0</severe><equilibrium type="integer">0</equilibrium><iterations type="integer">0</iterations><totalTime type="float">0</totalTime><stepTime type="float">0</stepTime><timeIncrement type="float">1e-36</timeIncrement><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Status>
+<MEMORY_ESTIMATE><memory type="float">186.027432441711</memory><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></MEMORY_ESTIMATE>
+<Odb_Frame><step type="integer">0</step><frame type="integer">1</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">2</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">3</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">4</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">5</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">6</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">7</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">8</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">9</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">10</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">1</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">2</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">3</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">4</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">5</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">6</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">7</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">8</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">9</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">10</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">11</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">12</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">13</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">14</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">15</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">16</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">17</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">18</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">19</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Odb_Frame><step type="integer">0</step><frame type="integer">20</frame><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Odb_Frame>
+<Status><step type="integer">1</step><increment type="integer">1</increment><attempts type="integer">1</attempts><severe type="integer">0</severe><equilibrium type="integer">0</equilibrium><iterations type="integer">0</iterations><totalTime type="float">0</totalTime><stepTime type="float">1e-36</stepTime><timeIncrement type="float">1e-36</timeIncrement><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Status>
+<End_Step><stepId type="integer">1</stepId><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></End_Step>
+<Completed><message type="string">Analysis phase complete</message><phase type="symconst">STANDARD_PHASE</phase><jobName type="string">NF</jobName></Completed>
+<JOB_COMPLETED><jobName type="string">NF</jobName><time type="string">Tue Feb 09 17:59:12 2016</time></JOB_COMPLETED></msgwrapper>

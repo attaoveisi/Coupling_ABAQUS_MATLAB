@@ -1,0 +1,314 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 6.13-1 replay file
+# Internal Version: 2013_05_16-04.28.56 126354
+# Run by p4wp4w on Tue Feb 09 18:02:00 2016
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+#: Abaqus Error: 
+#: This error may have occurred due to a change to the Abaqus Scripting
+#: Interface. Please see the Abaqus Scripting Manual for the details of
+#: these changes. Also see the "Example environment files" section of 
+#: the Abaqus Site Guide for up-to-date examples of common tasks in the
+#: environment file.
+#: Execution of "onCaeGraphicsStartup()" in the site directory failed.
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=271.731781005859, 
+    height=208.144454956055)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+openMdb('NewCylinderWithSubroutine.cae')
+#: The model database "C:\Temp\NewCylinderWithSubroutine.cae" has been opened.
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+p = mdb.models['Cylindrical Panel'].parts['Cylinder']
+session.viewports['Viewport: 1'].setValues(displayedObject=p)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    adaptiveMeshConstraints=ON, optimizationTasks=OFF, 
+    geometricRestrictions=OFF, stopConditions=OFF)
+del mdb.models['Cylindrical Panel'].steps['Step-1']
+mdb.models['Cylindrical Panel'].SteadyStateDirectStep(name='Step-1', 
+    previous='Initial', frequencyRange=((1300.0, 2400.0, 550, 1.0), ), 
+    scale=LINEAR)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(step='Step-1')
+mdb.models['Cylindrical Panel'].fieldOutputRequests['F-Output-1'].setValues(
+    variables=('U', 'EPOT'))
+mdb.models['Cylindrical Panel'].historyOutputRequests['H-Output-1'].setValues(
+    frequency=500)
+mdb.models['Cylindrical Panel'].historyOutputRequests['H-Output-1'].setValues(
+    variables=('ETOTAL', ))
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_1']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU1', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_2']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU2', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_3']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU3', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_4']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU4', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_5']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU5', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_6']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU6', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_7']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU7', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_8']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU8', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_9']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU9', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_10']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU10', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_11']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='H-Output-12', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_11']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU11', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+mdb.models['Cylindrical Panel'].historyOutputRequests['H-Output-12'].suppress()
+mdb.models['Cylindrical Panel'].historyOutputRequests['H-Output-12'].resume()
+del mdb.models['Cylindrical Panel'].historyOutputRequests['H-Output-12']
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_12']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU12', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_13']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU13', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_14']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU14', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_15']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU15', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_16']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU16', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_17']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU17', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['SENSOR_POINT_18']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='SENU18', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+mdb.save()
+#: The model database has been saved to "C:\Temp\NewCylinderWithSubroutine.cae".
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['actuator_point1']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='ACT1', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+regionDef=mdb.models['Cylindrical Panel'].rootAssembly.sets['actuator_poin2']
+mdb.models['Cylindrical Panel'].HistoryOutputRequest(name='ACT2', 
+    createStepName='Step-1', variables=('EPOT', ), region=regionDef, 
+    sectionPoints=DEFAULT, rebar=EXCLUDE)
+mdb.save()
+#: The model database has been saved to "C:\Temp\NewCylinderWithSubroutine.cae".
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(interactions=ON, 
+    constraints=ON, connectors=ON, engineeringFeatures=ON, 
+    adaptiveMeshConstraints=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=ON, bcs=ON, 
+    predefinedFields=ON, interactions=OFF, constraints=OFF, 
+    engineeringFeatures=OFF)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+f1 = a.instances['Cylinder-1'].faces
+faces1 = f1.getSequenceFromMask(mask=('[#84088924 #41104488 #20840a10 #121 ]', 
+    ), )
+leaf = dgm.LeafFromGeometry(faceSeq=faces1)
+session.viewports['Viewport: 1'].assemblyDisplay.displayGroup.remove(leaf=leaf)
+leaf = dgm.Leaf(leafType=DEFAULT_MODEL)
+session.viewports['Viewport: 1'].assemblyDisplay.displayGroup.replace(
+    leaf=leaf)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+s1 = a.instances['Cylinder-1'].faces
+side1Faces1 = s1.getSequenceFromMask(mask=(
+    '[#84088924 #41104488 #20840a10 #121 ]', ), )
+region = regionToolset.Region(side1Faces=side1Faces1)
+mdb.models['Cylindrical Panel'].Pressure(name='Load-1', 
+    createStepName='Step-1', region=region, distributionType=UNIFORM, field='', 
+    magnitude=1+0j, amplitude=UNSET)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+i1 = a.instances['Piezo-1']
+leaf = dgm.LeafFromInstance((i1, ))
+session.viewports['Viewport: 1'].assemblyDisplay.displayGroup.remove(leaf=leaf)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+s1 = a.instances['Cylinder-1'].faces
+side1Faces1 = s1.getSequenceFromMask(mask=(
+    '[#84888924 #41104488 #20840a10 #121 ]', ), )
+region = regionToolset.Region(side1Faces=side1Faces1)
+mdb.models['Cylindrical Panel'].loads['Load-1'].setValues(region=region)
+mdb.models['Cylindrical Panel'].loads['Load-1'].setValues(magnitude=100000000+\
+    0j)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=OFF, bcs=OFF, 
+    predefinedFields=OFF, connectors=OFF, adaptiveMeshConstraints=ON)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(loads=ON, bcs=ON, 
+    predefinedFields=ON, connectors=ON, adaptiveMeshConstraints=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=ON, loads=OFF, 
+    bcs=OFF, predefinedFields=OFF, connectors=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=ON)
+leaf = dgm.Leaf(leafType=DEFAULT_MODEL)
+session.viewports['Viewport: 1'].assemblyDisplay.displayGroup.replace(
+    leaf=leaf)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(mesh=OFF)
+session.viewports['Viewport: 1'].assemblyDisplay.meshOptions.setValues(
+    meshTechnique=OFF)
+del mdb.jobs['closedloop_step']
+del mdb.jobs['openloop_step']
+mdb.Job(name='SS_F', model='Cylindrical Panel', description='', type=ANALYSIS, 
+    atTime=None, waitMinutes=0, waitHours=0, queue=None, memory=90, 
+    memoryUnits=PERCENTAGE, getMemoryFromAnalysis=True, 
+    explicitPrecision=SINGLE, nodalOutputPrecision=SINGLE, echoPrint=OFF, 
+    modelPrint=OFF, contactPrint=OFF, historyPrint=OFF, userSubroutine='', 
+    scratch='', multiprocessingMode=DEFAULT, numCpus=8, numDomains=8, 
+    numGPUs=0)
+mdb.jobs['SS_F'].submit(consistencyChecking=OFF)
+#: The job input file "SS_F.inp" has been submitted for analysis.
+#: Job SS_F: Analysis Input File Processor completed successfully.
+#: Job SS_F: Abaqus/Standard completed successfully.
+#: Job SS_F completed successfully. 
+o3 = session.openOdb(name='C:/Temp/SS_F.odb')
+#: Model: C:/Temp/SS_F.odb
+#: Number of Assemblies:         1
+#: Number of Assembly instances: 0
+#: Number of Part instances:     3
+#: Number of Meshes:             3
+#: Number of Element Sets:       9
+#: Number of Node Sets:          30
+#: Number of Steps:              1
+session.viewports['Viewport: 1'].setValues(displayedObject=o3)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+odb = session.odbs['C:/Temp/SS_F.odb']
+xy1 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 1 in NSET SENSOR_POINT_1', 
+    steps=('Step-1', ), suppressQuery=True)
+c1 = session.Curve(xyData=xy1)
+xy2 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 2 in NSET SENSOR_POINT_2', 
+    steps=('Step-1', ), suppressQuery=True)
+c2 = session.Curve(xyData=xy2)
+xy3 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 3 in NSET SENSOR_POINT_3', 
+    steps=('Step-1', ), suppressQuery=True)
+c3 = session.Curve(xyData=xy3)
+xy4 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 7 in NSET SENSOR_POINT_4', 
+    steps=('Step-1', ), suppressQuery=True)
+c4 = session.Curve(xyData=xy4)
+xy5 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 8 in NSET SENSOR_POINT_5', 
+    steps=('Step-1', ), suppressQuery=True)
+c5 = session.Curve(xyData=xy5)
+xy6 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 9 in NSET SENSOR_POINT_6', 
+    steps=('Step-1', ), suppressQuery=True)
+c6 = session.Curve(xyData=xy6)
+xy7 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 13 in NSET SENSOR_POINT_7', 
+    steps=('Step-1', ), suppressQuery=True)
+c7 = session.Curve(xyData=xy7)
+xy8 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 14 in NSET SENSOR_POINT_8', 
+    steps=('Step-1', ), suppressQuery=True)
+c8 = session.Curve(xyData=xy8)
+xy9 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 15 in NSET SENSOR_POINT_9', 
+    steps=('Step-1', ), suppressQuery=True)
+c9 = session.Curve(xyData=xy9)
+xy10 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 19 in NSET SENSOR_POINT_10', 
+    steps=('Step-1', ), suppressQuery=True)
+c10 = session.Curve(xyData=xy10)
+xy11 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 20 in NSET SENSOR_POINT_11', 
+    steps=('Step-1', ), suppressQuery=True)
+c11 = session.Curve(xyData=xy11)
+xy12 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 21 in NSET SENSOR_POINT_12', 
+    steps=('Step-1', ), suppressQuery=True)
+c12 = session.Curve(xyData=xy12)
+xy13 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 25 in NSET SENSOR_POINT_13', 
+    steps=('Step-1', ), suppressQuery=True)
+c13 = session.Curve(xyData=xy13)
+xy14 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 26 in NSET SENSOR_POINT_14', 
+    steps=('Step-1', ), suppressQuery=True)
+c14 = session.Curve(xyData=xy14)
+xy15 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 27 in NSET SENSOR_POINT_15', 
+    steps=('Step-1', ), suppressQuery=True)
+c15 = session.Curve(xyData=xy15)
+xy16 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 31 in NSET SENSOR_POINT_16', 
+    steps=('Step-1', ), suppressQuery=True)
+c16 = session.Curve(xyData=xy16)
+xy17 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 32 in NSET SENSOR_POINT_17', 
+    steps=('Step-1', ), suppressQuery=True)
+c17 = session.Curve(xyData=xy17)
+xy18 = xyPlot.XYDataFromHistory(odb=odb, 
+    outputVariableName='Electrical potential: EPOT PI: SENSOR-1 Node 33 in NSET SENSOR_POINT_18', 
+    steps=('Step-1', ), suppressQuery=False)
+c18 = session.Curve(xyData=xy18)
+xyp = session.XYPlot('XYPlot-1')
+chartName = xyp.charts.keys()[0]
+chart = xyp.charts[chartName]
+chart.setValues(curvesToPlot=(c1, c2, c3, c4, c5, c6, c7, c8, c9, c10, c11, 
+    c12, c13, c14, c15, c16, c17, c18, ), )
+session.viewports['Viewport: 1'].setValues(displayedObject=xyp)
+session.xyPlots[session.viewports['Viewport: 1'].displayedObject.name].setValues(
+    transform=(1.61444, 0, 0, 0.17105, 0, 1.61444, 0, 0.045401, 0, 0, 1.61444, 
+    0, 0, 0, 0, 1))
+odb = session.odbs['C:/Temp/SS_F.odb']
+session.viewports['Viewport: 1'].setValues(displayedObject=odb)
+session.viewports['Viewport: 1'].odbDisplay.display.setValues(plotState=(
+    CONTOURS_ON_DEF, ))
+session.animationController.animationOptions.setValues(frameRate=1)
+session.animationController.setValues(animationType=SCALE_FACTOR, viewports=(
+    'Viewport: 1', ))
+session.animationController.play(duration=UNLIMITED)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=529)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=532)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=534)
+session.animationController.setValues(animationType=NONE)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=531)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=534)
+session.viewports['Viewport: 1'].odbDisplay.setFrame(step=0, frame=538)
+mdb.save()
+#: The model database has been saved to "C:\Temp\NewCylinderWithSubroutine.cae".

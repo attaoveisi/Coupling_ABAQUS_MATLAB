@@ -1,0 +1,16 @@
+Abaqus JOB SS_F
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Foundation checked out 7 tokens.
+<1017 out of 1024 licenses remain available>.
+Begin Analysis Input File Processor
+2/9/2016 6:19:30 PM
+Run pre.exe
+2/9/2016 6:19:41 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+2/9/2016 6:19:41 PM
+Run standard.exe
+2/9/2016 6:40:19 PM
+End Abaqus/Standard Analysis
+Abaqus JOB SS_F COMPLETED

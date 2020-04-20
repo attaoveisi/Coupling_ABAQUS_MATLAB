@@ -1,0 +1,26 @@
+Abaqus JOB closedloop_step
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Standard checked out 12 tokens.
+<1012 out of 1024 licenses remain available>.
+Begin Compiling Abaqus/Standard User Subroutines
+2/20/2016 12:03:19 PM
+Intel(R) Visual Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.0.108 Build 20140726
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+End Compiling Abaqus/Standard User Subroutines
+Begin Linking Abaqus/Standard User Subroutines
+   Creating library standardU.lib and object standardU.exp
+End Linking Abaqus/Standard User Subroutines
+2/20/2016 12:03:19 PM
+Begin Analysis Input File Processor
+2/20/2016 12:03:19 PM
+Run pre.exe
+2/20/2016 12:03:32 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+2/20/2016 12:03:32 PM
+Run standard.exe
+2/20/2016 12:42:18 PM
+Abaqus Error: Unable to delete file(s) C:\Users\p4wp4w\AppData\Local\Temp\p4wp4w_closedloop_step_6540. Please check that you have file ownership and permissions for removal.
+Abaqus/Analysis exited with errors

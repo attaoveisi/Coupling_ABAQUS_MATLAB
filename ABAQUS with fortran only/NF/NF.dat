@@ -1,0 +1,573 @@
+1
+
+   Abaqus 6.13-1                                  Date 09-Feb-2016   Time 17:58:53
+   For use by  under license from Dassault Systemes or its subsidiary.
+
+
+
+                         The Abaqus Software is a product of:
+
+                           Dassault Systemes Simulia Corp.
+                                 Rising Sun Mills
+                                 166 Valley Street
+                           Providence, RI 02909-2499, USA
+ 
+
+
+                   The Abaqus Software is available only under license
+                   from Dassault Systemes or its subsidiary and may be
+                   used or reproduced only in accordance with the terms
+                   of such license.
+ 
+                          On machine ABLAH 
+                          you are authorized to run
+                          Abaqus/Foundation until 31-Dec-2055
+
+                          Your site id is:  
+
+
+ 
+                    For assistance or any other information you may
+                    obtain contact information for your local office
+                    from the world wide web at:
+
+                      http://www.3ds.com/products/simulia/locations/
+
+ 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+                *                                                         * 
+                *                   *****************                     * 
+                *                   *  N O T I C E  *                     * 
+                *                   *****************                     * 
+                *                                                         * 
+                *                                                         * 
+                *                    Abaqus 6.13-1                        * 
+                *                                                         * 
+                *          BUILD ID: 2013_05_16-04.28.56 126354           * 
+                *                                                         * 
+                *                                                         * 
+                *  Please make sure you are using release 6.13 manuals    * 
+                *  plus the notes accompanying this release.              * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                *                                                         * 
+                * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * 
+
+
+ 
+
+
+
+     PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   *******************************************************
+
+
+     END PROCESSING PART, INSTANCE, AND ASSEMBLY INFORMATION
+   ***********************************************************
+
+
+
+
+     OPTIONS BEING PROCESSED
+   ***************************
+
+
+  *Heading
+  *Node
+  *Element, type=C3D8R
+  *Nset, nset=ASSEMBLY_CYLINDER-1_SET-1
+  *Nset, nset=ASSEMBLY_CYLINDER-1__G8
+  *Nset, nset=ASSEMBLY_CYLINDER-1__G9
+  *Elset, elset=ASSEMBLY_CYLINDER-1__G8
+  *Elset, elset=ASSEMBLY_CYLINDER-1__G9
+  *Node
+  *Element, type=C3D20E
+  *Nset, nset=ASSEMBLY_PIEZO-1__G3
+  *Nset, nset=ASSEMBLY_PIEZO-1__G4
+  *Elset, elset=ASSEMBLY_PIEZO-1__G3
+  *Elset, elset=ASSEMBLY_PIEZO-1__G4
+  *Node
+  *Element, type=C3D20E
+  *Nset, nset=ASSEMBLY_SENSOR-1__G3
+  *Nset, nset=ASSEMBLY_SENSOR-1__G4
+  *Elset, elset=ASSEMBLY_SENSOR-1__G3
+  *Elset, elset=ASSEMBLY_SENSOR-1__G4
+  *Nset, nset=ASSEMBLY_ACTUATOR_POIN2
+  *Nset, nset=ASSEMBLY_ACTUATOR_POINT1
+  *Nset, nset=ASSEMBLY_ACT_LOWER_LAYER
+  *Nset, nset=ASSEMBLY_ACT_SENS_BACK_SIDE
+  *Nset, nset=ASSEMBLY_ACT_SENS_FRONT_SIDE
+  *Nset, nset=ASSEMBLY_ACT_SENS_LEFT_SIDE
+  *Nset, nset=ASSEMBLY_ACT_SENS_RIGHT_SIDE
+  *Nset, nset=ASSEMBLY_ACT_UPPER_SIDE
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_1
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_10
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_11
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_12
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_13
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_14
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_15
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_16
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_17
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_18
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_2
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_3
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_4
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_5
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_6
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_7
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_8
+  *Nset, nset=ASSEMBLY_SENSOR_POINT_9
+  *Nset, nset=ASSEMBLY_SENS_BOTTOM_SIDE
+  *Nset, nset=ASSEMBLY_SENS_UPPER_LAYER
+  *Nset, nset=ASSEMBLY__PICKEDSET31
+  *Nset, nset=ASSEMBLY__PICKEDSET32
+  *Nset, nset=ASSEMBLY__PICKEDSET33
+  *Nset, nset=ASSEMBLY__PICKEDSET34
+  *Nset, nset=ASSEMBLY__T-CYLINDER-1-CYLINDRICALCOOR
+  *Elset, elset="ASSEMBLY__Bottom Layer Cylinder_S2"
+  *Elset, elset="ASSEMBLY__Bottom Layer Piezo_S2"
+  *Elset, elset="ASSEMBLY__Top Layer Cylinder_S1"
+  *Elset, elset="ASSEMBLY__Top Layer Piezo_S1"
+  *Elset, elset=ASSEMBLY_ACT_LOWER_LAYER
+  *Elset, elset=ASSEMBLY_ACT_SENS_BACK_SIDE
+  *Elset, elset=ASSEMBLY_ACT_SENS_FRONT_SIDE
+  *Elset, elset=ASSEMBLY_ACT_SENS_LEFT_SIDE
+  *Elset, elset=ASSEMBLY_ACT_SENS_RIGHT_SIDE
+  *Elset, elset=ASSEMBLY_ACT_UPPER_SIDE
+  *Elset, elset=ASSEMBLY_SENS_BOTTOM_SIDE
+  *Elset, elset=ASSEMBLY_SENS_UPPER_LAYER
+  *Elset, elset=ASSEMBLY__CYLINDERSURFACE_S1
+  *Elset, elset=ASSEMBLY__CYLINDERSURFACE_S2
+  *Elset, elset=ASSEMBLY__PICKEDSET31
+  *Elset, elset=ASSEMBLY__PICKEDSET32
+  *Elset, elset=ASSEMBLY__PICKEDSET33
+  *Elset, elset=ASSEMBLY__PICKEDSET34
+  *Elset, elset=ASSEMBLY__TOP_LAYER_ACTUATOR_S1
+  *Elset, elset=ASSEMBLY___PICKEDSURF40_S2
+  *Elset, elset=ASSEMBLY___PICKEDSURF41_S1
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY_CYLINDERSURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_TOP_LAYER_ACTUATOR
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF40
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF41
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY_CYLINDERSURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_TOP_LAYER_ACTUATOR
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF40
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF41
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY_CYLINDERSURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_TOP_LAYER_ACTUATOR
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF40
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF41
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *orientation, name=ASSEMBLY_CYLINDER-1_ORI-1, system=CYLINDRICAL
+  *orientation, name=ASSEMBLY_PIEZO-1_ORI-1, system=CYLINDRICAL
+  *orientation, name=ASSEMBLY_SENSOR-1_ORI-1, system=CYLINDRICAL
+  *solidsection, elset=ASSEMBLY_CYLINDER-1__G8, orientation=ASSEMBLY_CYLINDER-1_ORI-1, material=HOST
+  *solidsection, elset=ASSEMBLY_PIEZO-1__G3, orientation=ASSEMBLY_PIEZO-1_ORI-1, material=ACTUATOR
+  *solidsection, elset=ASSEMBLY_SENSOR-1__G3, orientation=ASSEMBLY_SENSOR-1_ORI-1, material=SENS
+  *material, name=ACTUATOR
+  *density
+  *dielectric, type=ORTHOTROPIC
+  *elastic, type=ORTHOTROPIC
+  *piezoelectric
+  *material, name=HOST
+  *density
+  *elastic, type=ORTHOTROPIC
+  *material, name=SENS
+  *density
+  *dielectric, type=ORTHOTROPIC
+  *elastic, type=ORTHOTROPIC
+  *piezoelectric
+  *orientation, name=ASSEMBLY_CYLINDER-1_ORI-1, system=CYLINDRICAL
+  *orientation, name=ASSEMBLY_PIEZO-1_ORI-1, system=CYLINDRICAL
+  *orientation, name=ASSEMBLY_SENSOR-1_ORI-1, system=CYLINDRICAL
+  *solidsection, elset=ASSEMBLY_CYLINDER-1__G8, orientation=ASSEMBLY_CYLINDER-1_ORI-1, material=HOST
+  *solidsection, elset=ASSEMBLY_PIEZO-1__G3, orientation=ASSEMBLY_PIEZO-1_ORI-1, material=ACTUATOR
+  *solidsection, elset=ASSEMBLY_SENSOR-1__G3, orientation=ASSEMBLY_SENSOR-1_ORI-1, material=SENS
+  *transform, nset=ASSEMBLY__T-CYLINDER-1-CYLINDRICALCOOR, type=C
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+
+
+  SLAVE : ASSEMBLY__PICKEDSURF41                                                          
+  MASTER: ASSEMBLY_Bottom Layer Piezo                                                     
+              DISTANCE
+   NODE       ADJUSTED    REMARKS/WARNINGS
+
+        11   2.15325E-04  ADJUSTED TO (-5.54151E-02, 0.52731    , 0.40000    ).
+        15   2.15325E-04  ADJUSTED TO (-5.54151E-02, 0.52731    , 0.60000    ).
+        22   2.15325E-04  ADJUSTED TO ( 5.54151E-02, 0.52731    , 0.40000    ).
+        26   2.15325E-04  ADJUSTED TO ( 5.54151E-02, 0.52731    , 0.60000    ).
+       145   2.15324E-04  ADJUSTED TO (-5.54151E-02, 0.52731    , 0.56000    ).
+       146   2.15324E-04  ADJUSTED TO (-5.54151E-02, 0.52731    , 0.52000    ).
+       147   2.15324E-04  ADJUSTED TO (-5.54151E-02, 0.52731    , 0.48000    ).
+       148   2.15324E-04  ADJUSTED TO (-5.54151E-02, 0.52731    , 0.44000    ).
+       189   2.15224E-04  ADJUSTED TO (-1.85042E-02, 0.52989    , 0.40000    ).
+       190   2.15224E-04  ADJUSTED TO ( 1.85042E-02, 0.52989    , 0.40000    ).
+       215   2.15324E-04  ADJUSTED TO ( 5.54151E-02, 0.52731    , 0.56000    ).
+       216   2.15324E-04  ADJUSTED TO ( 5.54151E-02, 0.52731    , 0.52000    ).
+       217   2.15324E-04  ADJUSTED TO ( 5.54151E-02, 0.52731    , 0.48000    ).
+       218   2.15324E-04  ADJUSTED TO ( 5.54151E-02, 0.52731    , 0.44000    ).
+       219   2.15224E-04  ADJUSTED TO (-1.85042E-02, 0.52989    , 0.60000    ).
+       220   2.15224E-04  ADJUSTED TO ( 1.85042E-02, 0.52989    , 0.60000    ).
+       779   2.15224E-04  ADJUSTED TO (-1.85042E-02, 0.52989    , 0.44000    ).
+       780   2.15224E-04  ADJUSTED TO ( 1.85042E-02, 0.52989    , 0.44000    ).
+       781   2.15224E-04  ADJUSTED TO (-1.85042E-02, 0.52989    , 0.48000    ).
+       782   2.15224E-04  ADJUSTED TO ( 1.85042E-02, 0.52989    , 0.48000    ).
+
+ ***WARNING: PLEASE MAKE SURE THAT THE MESH DENSITY OF THE SLAVE SURFACE IN THE 
+             TIE PAIR (ASSEMBLY__PICKEDSURF41,ASSEMBLY_Bottom Layer Piezo) IS 
+             FINER THAN THE MASTER SURFACE.  THE ANALYSIS MAY RUN SLOWER, MAY 
+             YIELD INACCURATE RESULTS, AND MAY REQUIRE MORE MEMORY IF THIS IS 
+             NOT THE CASE.
+
+
+
+
+ ***WARNING: FOR *TIE PAIR (ASSEMBLY__PICKEDSURF41-ASSEMBLY_Bottom Layer 
+             Piezo), NOT ALL THE NODES THAT HAVE BEEN ADJUSTED WERE PRINTED. 
+             SPECIFY *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+
+
+  SLAVE : ASSEMBLY_Top Layer Piezo                                                        
+  MASTER: ASSEMBLY__PICKEDSURF40                                                          
+              DISTANCE
+   NODE       ADJUSTED    REMARKS/WARNINGS
+
+      3363   3.27940E-04  ADJUSTED TO ( 3.13765E-02, 0.49869    , 0.60000    ).
+      3364   1.77293E-04  ADJUSTED TO ( 1.04675E-02, 0.49971    , 0.60000    ).
+      3365   1.77293E-04  ADJUSTED TO (-1.04675E-02, 0.49971    , 0.60000    ).
+      3366   3.27940E-04  ADJUSTED TO (-3.13765E-02, 0.49869    , 0.60000    ).
+      3369   3.27940E-04  ADJUSTED TO ( 3.13765E-02, 0.49869    , 0.58000    ).
+      3370   1.77293E-04  ADJUSTED TO ( 1.04675E-02, 0.49971    , 0.58000    ).
+      3371   1.77293E-04  ADJUSTED TO (-1.04675E-02, 0.49971    , 0.58000    ).
+      3372   3.27940E-04  ADJUSTED TO (-3.13765E-02, 0.49869    , 0.58000    ).
+      3375   3.27940E-04  ADJUSTED TO ( 3.13765E-02, 0.49869    , 0.56000    ).
+      3376   1.77293E-04  ADJUSTED TO ( 1.04675E-02, 0.49971    , 0.56000    ).
+      3377   1.77293E-04  ADJUSTED TO (-1.04675E-02, 0.49971    , 0.56000    ).
+      3378   3.27940E-04  ADJUSTED TO (-3.13765E-02, 0.49869    , 0.56000    ).
+      3381   3.27940E-04  ADJUSTED TO ( 3.13765E-02, 0.49869    , 0.54000    ).
+      3382   1.77293E-04  ADJUSTED TO ( 1.04675E-02, 0.49971    , 0.54000    ).
+      3383   1.77293E-04  ADJUSTED TO (-1.04675E-02, 0.49971    , 0.54000    ).
+      3384   3.27940E-04  ADJUSTED TO (-3.13765E-02, 0.49869    , 0.54000    ).
+      3387   3.27940E-04  ADJUSTED TO ( 3.13765E-02, 0.49869    , 0.52000    ).
+      3388   1.77293E-04  ADJUSTED TO ( 1.04675E-02, 0.49971    , 0.52000    ).
+      3389   1.77293E-04  ADJUSTED TO (-1.04675E-02, 0.49971    , 0.52000    ).
+      3390   3.27940E-04  ADJUSTED TO (-3.13765E-02, 0.49869    , 0.52000    ).
+
+
+
+
+ ***WARNING: FOR *TIE PAIR (ASSEMBLY_Top Layer Piezo-ASSEMBLY__PICKEDSURF40), 
+             NOT ALL THE NODES THAT HAVE BEEN ADJUSTED WERE PRINTED. SPECIFY 
+             *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.
+
+ ***WARNING: FOR *TIE PAIR (ASSEMBLY_Top Layer Piezo-ASSEMBLY__PICKEDSURF40), 
+             ADJUSTED NODES WITH VERY SMALL ADJUSTMENTS WERE NOT PRINTED. 
+             SPECIFY *PREPRINT,MODEL=YES FOR COMPLETE PRINTOUT.
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *solidsection, elset=ASSEMBLY_CYLINDER-1__G8, orientation=ASSEMBLY_CYLINDER-1_ORI-1, material=HOST
+  *solidsection, elset=ASSEMBLY_PIEZO-1__G3, orientation=ASSEMBLY_PIEZO-1_ORI-1, material=ACTUATOR
+  *solidsection, elset=ASSEMBLY_SENSOR-1__G3, orientation=ASSEMBLY_SENSOR-1_ORI-1, material=SENS
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Bottom Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY_CYLINDERSURFACE
+  *surface, type=ELEMENT, name=ASSEMBLY_TOP_LAYER_ACTUATOR
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Cylinder"
+  *surface, type=ELEMENT, name="ASSEMBLY_Top Layer Piezo"
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF40
+  *surface, type=ELEMENT, name=ASSEMBLY__PICKEDSURF41
+  *tie, name=ASSEMBLY_CONSTRAINT-1, adjust=YES
+  *tie, name=ASSEMBLY_CONSTRAINT-2, adjust=YES
+  *output, field, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *output, field, variable=PRESELECT
+  *amplitude, name=AMP-4
+  *amplitude, name=HOSTAMPLITUDE
+  *amplitude, name=PERIODIC, definition=PERIODIC
+  *amplitude, name=SURFACE_CHARGE, definition=USER, variables=1
+
+ ***WARNING: NOTE THAT THE NUMBER OF ARGUMENTS FOR USER SUBROUTINES UAMP AND 
+             VUAMP HAVE BEEN CHANGED FOR V6.12. THE ARGUMENTS NPROPS AND PROPS 
+             HAVE BEEN ADDED. IF THE NUMBER OF ARGUMENTS ARE INCORRECT, THEN 
+             THE ANALYSIS WILL NOT RUN PROPERLY. PLEASE READ THE ABAQUS USER 
+             SUBROUTINES REFERENCE MANUAL FOR MORE DETAILS.
+
+ ***WARNING: AMPLITUDE, DEFINITION=USER HAS BEEN SPECIFIED IN THE INPUT FILE. 
+             THIS AMPLITUDE TYPE IS NOT SUPPORTED FOR MODAL PROCEDURES AND 
+             STEADY-STATE DYNAMIC ANALYSIS WITH THE RESPONSE COMPUTED DIRECTLY 
+             IN TERMS OF THE PHYSICAL DEGREES OF FREEDOM. IT WILL BE IGNORED IF 
+             IT IS USED WITH ANY OF THOSE PROCEDURES.
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *frequency, eigensolver=LANCZOS, normalization=DISPLACEMENT, acousticcoupling=ON
+  *output, field, variable=PRESELECT
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *frequency, eigensolver=LANCZOS, normalization=DISPLACEMENT, acousticcoupling=ON
+  *frequency, eigensolver=LANCZOS, normalization=DISPLACEMENT, acousticcoupling=ON
+  *output, field, variable=PRESELECT
+  *endstep
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *boundary
+  *Step, name=Step-1, nlgeom=NO, perturbation
+  *frequency, eigensolver=LANCZOS, normalization=DISPLACEMENT, acousticcoupling=ON
+  *frequency, eigensolver=LANCZOS, normalization=DISPLACEMENT, acousticcoupling=ON
+  *endstep
+
+
+
+                            P R O B L E M   S I Z E
+
+
+          NUMBER OF ELEMENTS IS                                  1830
+          NUMBER OF NODES IS                                     4085
+          NUMBER OF NODES DEFINED BY THE USER                    4085
+          TOTAL NUMBER OF VARIABLES IN THE MODEL                14260
+          (DEGREES OF FREEDOM PLUS MAX NO. OF ANY LAGRANGE MULTIPLIER
+           VARIABLES. INCLUDE *PRINT,SOLVE=YES TO GET THE ACTUAL NUMBER.)
+
+
+
+                              END OF USER INPUT PROCESSING
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =  0.30000    
+       SYSTEM TIME (SEC)    =  0.10000    
+       TOTAL CPU TIME (SEC) =  0.40000    
+       WALLCLOCK TIME (SEC) =          1
+1
+
+   Abaqus 6.13-1                                  Date 09-Feb-2016   Time 17:59:06
+   For use by  under license from Dassault Systemes or its subsidiary.
+
+                                                                                               STEP    1  INCREMENT    1
+                                                                                          TIME COMPLETED IN THIS STEP   0.00    
+
+
+                        S T E P       1     C A L C U L A T I O N   O F   E I G E N V A L U E S
+
+                                            F O R   N A T U R A L   F R E Q U E N C I E S
+
+
+
+                                                                                          
+
+     THE LANCZOS EIGENSOLVER IS USED FOR THIS ANALYSIS
+     Abaqus WILL COMPUTE UNCOUPLED
+      STRUCTURAL AND ACOUSTIC MODES
+     NUMBER OF EIGENVALUES                     20
+     HIGHEST FREQUENCY OF INTEREST                  1.00000E+18
+     MAXIMUM NUMBER OF STEPS WITHIN RUN               35
+     BLOCK SIZE FOR LANCZOS PROCEDURE                  7
+     THE EIGENVECTORS ARE SCALED SO THAT 
+      THE LARGEST DISPLACEMENT ENTRY IN EACH VECTOR
+      IS UNITY
+
+     THIS IS A LINEAR PERTURBATION STEP.
+     ALL LOADS ARE DEFINED AS CHANGE IN LOAD TO THE REFERENCE STATE
+
+
+
+                    TOTAL MASS OF MODEL
+
+                       127.4955    
+
+
+                    LOCATION OF THE CENTER OF MASS OF THE MODEL
+
+                     -6.0278537E-14      0.4919576          0.5000000    
+
+
+                    MOMENTS OF INERTIA ABOUT THE ORIGIN
+                           I(XX)               I(YY)               I(ZZ)
+
+                       73.34375           45.33968           33.84298    
+
+
+                    PRODUCTS OF INERTIA ABOUT THE ORIGIN
+                           I(XY)               I(XZ)               I(YZ)
+
+                      3.9999442E-12      3.8401352E-12      -31.36119    
+
+
+                    MOMENTS OF INERTIA ABOUT THE CENTER OF MASS
+                           I(XX)               I(YY)               I(ZZ)
+
+                       10.61313           13.46580           2.986232    
+
+
+                    PRODUCTS OF INERTIA ABOUT THE CENTER OF MASS
+                           I(XY)               I(XZ)               I(YZ)
+
+                      2.1913092E-13     -2.4861621E-15     -5.5649707E-11
+  
+                   M E M O R Y   E S T I M A T E
+  
+ PROCESS      FLOATING PT       MINIMUM MEMORY        MEMORY TO
+              OPERATIONS           REQUIRED          MINIMIZE I/O
+             PER ITERATION         (MBYTES)           (MBYTES)
+  
+     1         2.79E+009               36                186
+  
+ NOTE:
+      (1) SINCE ABAQUS DOES NOT PRE-ALLOCATE MEMORY AND ONLY ALLOCATES MEMORY AS NEEDED DURING THE ANALYSIS,
+          THE MEMORY REQUIREMENT PRINTED HERE CAN ONLY BE VIEWED AS A GENERAL GUIDELINE BASED ON THE BEST
+          KNOWLEDGE AVAILABLE AT THE BEGINNING OF A STEP BEFORE THE SOLUTION PROCESS HAS BEGUN.
+      (2) THE ESTIMATE IS NORMALLY UPDATED AT THE BEGINNING OF EVERY STEP. IT IS THE MAXIMUM VALUE OF THE
+          ESTIMATE FROM THE CURRENT STEP TO THE LAST STEP OF THE ANALYSIS, WITH UNSYMMETRIC SOLUTION TAKEN
+          INTO ACCOUNT IF APPLICABLE. 
+      (3) SINCE THE ESTIMATE IS BASED ON THE ACTIVE DEGREES OF FREEDOM IN THE FIRST ITERATION OF THE 
+          CURRENT STEP, THE MEMORY ESTIMATE MIGHT BE SIGNIFICANTLY DIFFERENT THAN ACTUAL USAGE FOR 
+          PROBLEMS WITH SUBSTANTIAL CHANGES IN ACTIVE DEGREES OF FREEDOM BETWEEN STEPS (OR EVEN WITHIN
+          THE SAME STEP). EXAMPLES ARE: PROBLEMS WITH SIGNIFICANT CONTACT CHANGES, PROBLEMS WITH MODEL
+          CHANGE, PROBLEMS WITH BOTH STATIC STEP AND STEADY STATE DYNAMIC PROCEDURES WHERE ACOUSTIC 
+          ELEMENTS WILL ONLY BE ACTIVATED IN THE STEADY STATE DYNAMIC STEPS.
+      (4) FOR MULTI-PROCESS EXECUTION, THE ESTIMATED VALUE OF FLOATING POINT OPERATIONS FOR EACH PROCESS
+          IS BASED ON AN INITIAL SCHEDULING OF OPERATIONS AND MIGHT NOT REFLECT THE ACTUAL FLOATING 
+          POINT OPERATIONS COMPLETED ON EACH PROCESS. OPERATIONS ARE DYNAMICALLY BALANCED DURING EXECUTION, 
+          SO THE ACTUAL BALANCE OF OPERATIONS BETWEEN PROCESSES IS EXPECTED TO BE BETTER THAN THE ESTIMATE
+          PRINTED HERE.
+      (5) THE UPPER LIMIT OF MEMORY THAT CAN BE ALLOCATED BY ABAQUS WILL IN GENERAL DEPEND ON THE VALUE OF
+          THE "MEMORY" PARAMETER AND THE AMOUNT OF PHYSICAL MEMORY AVAILABLE ON THE MACHINE. PLEASE SEE
+          THE "ABAQUS ANALYSIS USER'S MANUAL" FOR MORE DETAILS. THE ACTUAL USAGE OF MEMORY AND OF DISK
+          SPACE FOR SCRATCH DATA WILL DEPEND ON THIS UPPER LIMIT AS WELL AS THE MEMORY REQUIRED TO MINIMIZE
+          I/O. IF THE MEMORY UPPER LIMIT IS GREATER THAN THE MEMORY REQUIRED TO MINIMIZE I/O, THEN THE ACTUAL
+          MEMORY USAGE WILL BE CLOSE TO THE ESTIMATED "MEMORY TO MINIMIZE I/O" VALUE, AND THE SCRATCH DISK
+          USAGE WILL BE CLOSE-TO-ZERO; OTHERWISE, THE ACTUAL MEMORY USED WILL BE CLOSE TO THE PREVIOUSLY
+          MENTIONED MEMORY LIMIT, AND THE SCRATCH DISK USAGE WILL BE ROUGHLY PROPORTIONAL TO THE DIFFERENCE
+          BETWEEN THE ESTIMATED "MEMORY TO MINIMIZE I/O" AND THE MEMORY UPPER LIMIT. HOWEVER ACCURATE
+          ESTIMATE OF THE SCRATCH DISK SPACE IS NOT POSSIBLE.
+      (6) USING "*RESTART, WRITE" CAN GENERATE A LARGE AMOUNT OF DATA WRITTEN IN THE WORK DIRECTORY.
+
+
+                              E I G E N V A L U E    O U T P U T     
+
+ MODE NO      EIGENVALUE              FREQUENCY         GENERALIZED MASS   COMPOSITE MODAL DAMPING            
+                             (RAD/TIME)   (CYCLES/TIME)
+
+
+       1      8.47770E+07     9207.4         1465.4         20.267         0.0000    
+       2      9.37571E+07     9682.8         1541.1         32.266         0.0000    
+       3      1.00071E+08     10004.         1592.1         20.971         0.0000    
+       4      1.32581E+08     11514.         1832.6         21.004         0.0000    
+       5      1.34831E+08     11612.         1848.1         31.270         0.0000    
+       6      1.93600E+08     13914.         2214.5         22.661         0.0000    
+       7      1.99463E+08     14123.         2247.8         30.243         0.0000    
+       8      3.00204E+08     17326.         2757.6         30.908         0.0000    
+       9      3.03561E+08     17423.         2773.0         23.936         0.0000    
+      10      3.26902E+08     18080.         2877.6         40.895         0.0000    
+      11      3.66554E+08     19146.         3047.1         32.798         0.0000    
+      12      3.87675E+08     19689.         3133.7         29.296         0.0000    
+      13      3.91678E+08     19791.         3149.8         28.897         0.0000    
+      14      3.92999E+08     19824.         3155.1         28.757         0.0000    
+      15      4.42507E+08     21036.         3348.0         30.117         0.0000    
+      16      4.72671E+08     21741.         3460.2         26.116         0.0000    
+      17      4.79616E+08     21900.         3485.5         28.107         0.0000    
+      18      5.17136E+08     22741.         3619.3         25.613         0.0000    
+      19      5.48493E+08     23420.         3727.4         14.871         0.0000    
+      20      5.51764E+08     23490.         3738.5         20.834         0.0000    
+
+
+          P A R T I C I P A T I O N   F A C T O R S
+
+ MODE NO    X-COMPONENT    Y-COMPONENT    Z-COMPONENT    X-ROTATION     Y-ROTATION     Z-ROTATION 
+
+       1     -2.73371E-12     1.6624        1.64756E-11   -0.83119       -1.38403E-12    5.97934E-13
+       2      0.67524        3.49562E-12   -4.17114E-14   -1.49352E-12    0.33762       -0.18284    
+       3      8.01949E-13    6.78937E-09    5.94220E-02   -0.35036        3.01387E-13   -2.17578E-13
+       4     -9.87220E-13    0.70810       -8.30355E-10   -0.35405       -3.13857E-13    3.70326E-13
+       5     -1.55300E-09   -4.10280E-13    4.91129E-13    2.00808E-13    0.15191        3.62872E-10
+       6     -2.28537E-13    1.95554E-09    5.47753E-02   -0.19917       -1.88353E-13    5.06406E-14
+       7      0.19989        1.73555E-13    3.52073E-14   -2.04157E-13    9.99442E-02   -3.95426E-02
+       8     -1.90896E-10    2.36493E-13   -6.66269E-13   -1.83166E-13    6.55367E-02    2.97454E-11
+       9      8.38557E-13    0.38173       -2.13175E-09   -0.19087        3.56118E-13   -2.93968E-13
+      10     -3.12100E-04   -8.69229E-13   -2.42706E-15    4.34937E-13   -1.56050E-04    7.62594E-05
+      11      9.98800E-13    0.73266       -1.89419E-09   -0.36633        4.99339E-13   -3.99215E-13
+      12     -5.47377E-10   -3.92170E-15    3.06104E-13    3.72430E-13   -5.76796E-05    3.22550E-10
+      13     -2.74082E-14   -2.68315E-03   -2.85172E-08    1.34159E-03   -2.21634E-14    1.11639E-14
+      14     -2.05918E-14    8.81560E-09    0.20080       -5.85483E-02    9.90841E-14    1.08633E-14
+      15     -0.12137       -6.33840E-13   -3.59941E-14    2.89528E-13   -6.06873E-02    2.26092E-02
+      16      5.21798E-12   -3.06094E-09    0.14321       -8.81627E-02    5.58906E-12   -2.86162E-12
+      17     -1.07512E-11   -0.17137       -2.16565E-08    8.56856E-02   -9.20874E-12    5.93104E-12
+      18      1.56831E-04    4.71579E-11   -1.35877E-11   -2.92019E-11    7.84158E-05    1.97250E-05
+      19      2.66907E-10    9.17080E-11    1.67778E-03   -7.08195E-05    2.68535E-10   -1.43537E-10
+      20     -1.84164E-05    4.40792E-10   -3.53976E-10   -4.05209E-10   -9.20813E-06   -7.51973E-06
+
+
+                    E F F E C T I V E   M A S S
+
+ MODE NO    X-COMPONENT    Y-COMPONENT    Z-COMPONENT    X-ROTATION     Y-ROTATION     Z-ROTATION 
+
+       1      1.51462E-22     56.010        5.50149E-21     14.002        3.88232E-23    7.24612E-24
+       2       14.712        3.94274E-22    5.61382E-26    7.19735E-23     3.6779         1.0787    
+       3      1.34872E-23    9.66690E-16    7.40496E-02     2.5742        1.90493E-24    9.92791E-25
+       4      2.04707E-23     10.532        1.44821E-17     2.6329        2.06903E-24    2.88053E-24
+       5      7.54177E-17    5.26369E-24    7.54259E-24    1.26093E-24    0.72157        4.11752E-18
+       6      1.18358E-24    8.66595E-17    6.79914E-02    0.89894        8.03951E-25    5.81143E-26
+       7       1.2084        9.10971E-25    3.74883E-26    1.26054E-24    0.30210        4.72889E-02
+       8      1.12633E-18    1.72865E-24    1.37205E-23    1.03695E-24    0.13275        2.73470E-20
+       9      1.68311E-23     3.4879        1.08772E-16    0.87198        3.03553E-24    2.06845E-24
+      10      3.98347E-06    3.08989E-23    2.40899E-28    7.73620E-24    9.95867E-07    2.37827E-07
+      11      3.27193E-23     17.606        1.17678E-16     4.4014        8.17783E-24    5.22709E-24
+      12      8.77767E-18    4.50561E-28    2.74501E-24    4.06346E-24    9.74656E-08    3.04789E-18
+      13      2.17079E-26    2.08041E-04    2.35001E-14    5.20109E-05    1.41948E-26    3.60155E-27
+      14      1.21936E-26    2.23484E-15     1.1596        9.85761E-02    2.82326E-25    3.39365E-27
+      15      0.44368        1.20996E-23    3.90189E-26    2.52460E-24    0.11092        1.53951E-02
+      16      7.11065E-22    2.44689E-16    0.53563        0.20299        8.15797E-22    2.13859E-22
+      17      3.24879E-21    0.82543        1.31820E-14    0.20636        2.38346E-21    9.88711E-22
+      18      6.29969E-07    5.69588E-20    4.72870E-21    2.18411E-20    1.57493E-07    9.96524E-09
+      19      1.05939E-18    1.25070E-19    4.18606E-05    7.45836E-08    1.07236E-18    3.06385E-19
+      20      7.06609E-09    4.04796E-18    2.61046E-18    3.42080E-18    1.76649E-09    1.17808E-09
+
+ TOTAL         16.364         88.461         1.8373         25.890         4.9453         1.1414    
+
+
+          THE ANALYSIS HAS BEEN COMPLETED
+
+
+
+                              ANALYSIS COMPLETE
+                              WITH      6 WARNING MESSAGES ON THE DAT FILE
+
+
+
+     JOB TIME SUMMARY
+       USER TIME (SEC)      =   2.6000    
+       SYSTEM TIME (SEC)    =  0.20000    
+       TOTAL CPU TIME (SEC) =   2.8000    
+       WALLCLOCK TIME (SEC) =          3

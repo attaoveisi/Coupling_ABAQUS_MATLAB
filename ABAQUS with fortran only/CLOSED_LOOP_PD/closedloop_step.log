@@ -1,0 +1,34 @@
+Abaqus JOB closedloop_step
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Standard checked out 12 tokens.
+<1012 out of 1024 licenses remain available>.
+Begin Compiling Abaqus/Standard User Subroutines
+2/10/2016 12:20:47 PM
+Intel(R) Visual Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.0.108 Build 20140726
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+End Compiling Abaqus/Standard User Subroutines
+Begin Linking Abaqus/Standard User Subroutines
+   Creating library standardU.lib and object standardU.exp
+End Linking Abaqus/Standard User Subroutines
+2/10/2016 12:20:48 PM
+Begin Analysis Input File Processor
+2/10/2016 12:20:48 PM
+Run pre.exe
+2/10/2016 12:21:00 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+2/10/2016 12:21:00 PM
+Run standard.exe
+2/10/2016 12:57:33 PM
+Abaqus Error: The executable standard.exe
+aborted with system error code 1073741819.
+Please check the .dat, .msg, and .sta files for error messages if the files
+exist.  If there are no error messages and you cannot resolve the problem,
+please run the command "abaqus job=support information=support" to report and
+save your system information.  Use the same command to run Abaqus that you
+used when the problem occurred.  Please contact your local Abaqus support
+office and send them the input file, the file support.log which you just
+created, the executable name, and the error code.
+Abaqus/Analysis exited with errors

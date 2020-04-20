@@ -1,0 +1,27 @@
+Abaqus JOB closedloop_step
+Abaqus 6.13-1
+Abaqus License Manager checked out the following licenses:
+Abaqus/Standard checked out 12 tokens.
+<1012 out of 1024 licenses remain available>.
+Begin Compiling Abaqus/Standard User Subroutines
+2/18/2016 1:32:38 PM
+Intel(R) Visual Fortran Intel(R) 64 Compiler XE for applications running on Intel(R) 64, Version 15.0.0.108 Build 20140726
+Copyright (C) 1985-2014 Intel Corporation.  All rights reserved.
+
+End Compiling Abaqus/Standard User Subroutines
+Begin Linking Abaqus/Standard User Subroutines
+   Creating library standardU.lib and object standardU.exp
+End Linking Abaqus/Standard User Subroutines
+2/18/2016 1:32:39 PM
+Begin Analysis Input File Processor
+2/18/2016 1:32:39 PM
+Run pre.exe
+2/18/2016 1:32:51 PM
+End Analysis Input File Processor
+Begin Abaqus/Standard Analysis
+2/18/2016 1:32:51 PM
+Run standard.exe
+2/18/2016 1:34:16 PM
+Abaqus Error: Abaqus/Standard Analysis exited with an error - Please see the 
+message file for possible error messages if the file exists.
+Abaqus/Analysis exited with errors

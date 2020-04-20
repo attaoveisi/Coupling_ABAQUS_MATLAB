@@ -1,0 +1,48 @@
+# -*- coding: mbcs -*-
+#
+# Abaqus/CAE Release 6.13-1 replay file
+# Internal Version: 2013_05_16-04.28.56 126354
+# Run by p4wp4w on Sat Feb 20 09:57:15 2016
+#
+
+# from driverUtils import executeOnCaeGraphicsStartup
+# executeOnCaeGraphicsStartup()
+#: Executing "onCaeGraphicsStartup()" in the site directory ...
+#: Abaqus Error: 
+#: This error may have occurred due to a change to the Abaqus Scripting
+#: Interface. Please see the Abaqus Scripting Manual for the details of
+#: these changes. Also see the "Example environment files" section of 
+#: the Abaqus Site Guide for up-to-date examples of common tasks in the
+#: environment file.
+#: Execution of "onCaeGraphicsStartup()" in the site directory failed.
+from abaqus import *
+from abaqusConstants import *
+session.Viewport(name='Viewport: 1', origin=(0.0, 0.0), width=271.731781005859, 
+    height=208.144454956055)
+session.viewports['Viewport: 1'].makeCurrent()
+session.viewports['Viewport: 1'].maximize()
+from caeModules import *
+from driverUtils import executeOnCaeStartup
+executeOnCaeStartup()
+session.viewports['Viewport: 1'].partDisplay.geometryOptions.setValues(
+    referenceRepresentation=ON)
+a = mdb.models['Model-1'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].assemblyDisplay.setValues(
+    optimizationTasks=OFF, geometricRestrictions=OFF, stopConditions=OFF)
+openMdb(pathName='C:/Temp/NewCylinderWithSubroutine.cae')
+#: The model database "C:\Temp\NewCylinderWithSubroutine.cae" has been opened.
+a = mdb.models['Cylindrical Panel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+session.viewports['Viewport: 1'].setValues(displayedObject=None)
+a = mdb.models['Cylindrical Panel'].rootAssembly
+session.viewports['Viewport: 1'].setValues(displayedObject=a)
+mdb.jobs['closedloop_step'].submit(consistencyChecking=OFF)
+#: The job input file "closedloop_step.inp" has been submitted for analysis.
+#: Job closedloop_step: Analysis Input File Processor completed successfully.
+mdb.jobs['closedloop_step'].kill()
+#: Error in job closedloop_step: Process terminated by external request (SIGTERM or SIGINT received).
+#: Error in job closedloop_step: Unable to delete file(s) C:\Users\p4wp4w\AppData\Local\Temp\p4wp4w_closedloop_step_4600. Please check that you have file ownership and permissions for removal.
+#: Job closedloop_step aborted due to errors.
